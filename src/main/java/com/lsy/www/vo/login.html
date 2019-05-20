@@ -1,0 +1,488 @@
+<div id="loginDiv" ng-controller="LoginController">
+	<div>
+		<div class="background">
+			<img src="img/main/bgImage.png">
+		</div>
+		<div
+			style="position: absolute; margin: 0 auto; display: block; max-width: 1920px; left: 0; right: 0; top: 0; width: 1300px;">
+			<div class="part-one-body">
+				<img src="img/main/tu11logo.png" class="logo">
+				<div class="part-one-header">
+					<div class="part-one-login" ng-click="login()">
+						<img src="img/main/login.png"> <span style="color: #fff;">商家登录</span>
+					</div>
+					<a class="part-one-title">首页</a> <a class="part-one-title">兔11</a>
+					<a class="part-one-title">技术与服务</a> <a class="part-one-title">人才与招聘</a>
+					<a class="part-one-title">加盟商家</a> <a class="part-one-title">关于我们</a>
+					<a class="part-one-title">联系我们</a>
+				</div>
+			</div>
+			<div class="part-one-center">
+				<div style="font-weight: bold; text-shadow: 5px 5px 0px #fd6e4b">
+					<span>兔11<br />微商生意助手
+					</span>
+				</div>
+				<div style="margin-top: 68px;">
+					<div style="display: flex;">
+						<div class="ios-qrcode">
+							<img src="img/main/ios.png" class="ph"> <img
+								src="img/main/iosBT.png" class="bt">
+						</div>
+						<div class="andriod-qrcode">
+							<img src="img/main/android.png" class="ph"> <img
+								src="img/main/	androidBT.png" class="bt">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="part-two">
+			<div class="part-two-service">
+				<span>特色服务</span>
+				<div class="underLine"></div>
+			</div>
+			<div style="display: flex;" class="auto">
+				<div ng-class="{'efficient-red':spel==0,'efficient-none':spel!=0}"
+					ng-click="spel=0">
+					<div class="part-two-div">
+						<span class="part-two-title">高效</span> <span class="part-two-text">方便微商、供货商高效管理商品出入货的信息,还可以高效的对账</span>
+					</div>
+				</div>
+				<div ng-class="{'exact-red':spel==1,'exact-none':spel!=1}"
+					ng-click="spel=1">
+					<div class="part-two-div">
+						<span class="part-two-title">精准</span> <span class="part-two-text">精准定位客户的订单信息,提高微商在查找和核对信息的精准性</span>
+					</div>
+				</div>
+				<div ng-class="{'safety-red':spel==2,'safety-none':spel!=2}"
+					ng-click="spel=2">
+					<div class="part-two-div">
+						<span class="part-two-title">安全</span> <span class="part-two-text">用户的信息安全、可靠。客户的资金流动安全，可信赖</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<img src="img/main/three.png"
+				style="height: 358px; width: 100%; max-width: 1920px; display: block; margin: 0 auto;">
+		</div>
+		<div class="part-two" style="background-color: #fff">
+			<div class="part-two-service">
+				<span>技术支持</span>
+				<div class="underLine"></div>
+			</div>
+			<div style="display: flex;" class="auto">
+				<div
+					style="width: 240px; height: 240px; background: url(img/main/01.png); text-align: center; margin-left: 130px; cursor: pointer;"></div>
+				<div
+					style="width: 240px; height: 240px; background: url(img/main/02.png); text-align: center; margin-left: 100px; cursor: pointer;"></div>
+				<div
+					style="width: 240px; height: 240px; background: url(img/main/03.png); text-align: center; margin-left: 100px; cursor: pointer;"></div>
+			</div>
+		</div>
+		<div class="part-four">
+			<div class="part-two-service">
+				<span>加盟商家</span>
+				<div class="underLine"></div>
+			</div>
+			<div style="display: flex;" class="auto">
+				<div
+					ng-class="{'part-four-frame':join!=0,'part-four-frame-red':join==0}"
+					style="margin-left: 0px;">
+					<span class="part-four-span">BOTANIST</span>
+				</div>
+				<div
+					ng-class="{'part-four-frame':join!=1,'part-four-frame-red':join==1}"
+					ng-click="join=1">
+					<span class="part-four-span">SALONIA</span>
+				</div>
+				<div
+					ng-class="{'part-four-frame':join!=2,'part-four-frame-red':join==2}"
+					ng-click="join=2">
+					<span class="part-four-span">LARA REPUBLIC</span>
+				</div>
+				<div
+					ng-class="{'part-four-frame':join!=3,'part-four-frame-red':join==3}"
+					ng-click="join=3">
+					<span class="part-four-span">JADE BLANC</span>
+				</div>
+				<div
+					ng-class="{'part-four-frame':join!=4,'part-four-frame-red':join==4}"
+					ng-click="join=4">
+					<span class="part-four-span">VITAFUL</span>
+				</div>
+			</div>
+		</div>
+		<div style="background-color: #fff;">
+			<div class="part-two-service" style="padding-top: 60px;">
+				<span>联系我们</span>
+				<div class="underLine"></div>
+			</div>
+			<div style="display: flex; padding-bottom: 100px;" class="auto">
+				<div
+					ng-class="{'phone-wechat-frame':contact!=0,'phone-wechat-frame-red':contact==0}"
+					ng-click="contact=0">
+					<img src="img/main/phone.png" style="margin-left: 160px;">
+					<div class="phone-wechat">
+						<span style="font-size: 20px;">客服电话:</span> <span
+							style="font-size: 16px; margin-top: 10px;">020-38299191</span>
+					</div>
+				</div>
+				<div
+					ng-class="{'phone-wechat-frame':contact!=1,'phone-wechat-frame-red':contact==1}"
+					ng-click="contact=1">
+					<img src="img/main/wechat.png" style="margin-left: 160px;">
+					<div class="phone-wechat">
+						<span style="font-size: 20px;">微信:</span> <span
+							style="font-size: 16px; margin-top: 10px;">关注微信公众号</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="background: #333333;">
+			<div style="width: 1200px; margin: 0 auto;">
+				<div
+					style="padding-top: 110px; text-align: center; font-size: 12px;">
+					<span class="dis-left">关于兔11</span> <span class="dis-left">技术与服务</span>
+					<span class="dis-left">人才招聘</span> <span class="dis-left">加盟商家</span>
+					<span class="dis-left">关于我们</span> <span class="dis-left">联系我们</span>
+					<span class="dis-left">法律声明</span> <span class="dis-left">隐私权政策</span>
+					<span class="dis-left">知识产权</span>
+				</div>
+				<div style="margin-top: 40px; display: flex;justify-content: center;">
+					<div style="color: #cccccc; font-size: 10px;">
+						<img src="img/main/android.png" style=""> <span
+							style="display: block; text-align: center; margin-top: 5px;">微信扫描二维码关注</span>
+						<span style="display: block; text-align: center;">兔11公众号</span>
+					</div>
+					<div style="color: #cccccc; font-size: 10px; margin-left: 40px;">
+						<img src="img/main/ios.png"> <span
+							style="display: block; text-align: center; margin-top: 5px;">微信扫描二维码下载</span>
+						<span style="display: block; text-align: center;">兔11APP</span>
+					</div>
+					<div
+						style="height: 130px; border-right: 1px solid #cccccc; margin-left: 60px;"></div>
+					<div style="margin-left: 40px">
+						<span style="font-size: 18px; color: #cccccc">联系我们</span> <span
+							style="font-size: 16px; margin-top: 40px; color: #cccccc; display: block;">客服电话:020-38299191</span>
+						<span
+							style="margin-top: 10px; font-size: 12px; color: #cccccc; display: block;">广州壹拾壹网络科技有限公司</span>
+					</div>
+				</div>
+				<div
+					style="color: #cccccc; text-align: center; padding: 40px 0 40px 0; font-size: 12px;">
+					<span>Copyright 2019 广州壹拾壹网络科技有限公司 版权所有</span><br /> <span>粤ICP备19008816号-1</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+.auto {
+	width: 1200px;
+	margin: 40px auto 0 auto;
+}
+
+.dis-left {
+	margin-left: 20px;
+	font-szie: 12px;
+	color: #cccccc;
+}
+
+.part-one-title {
+	color: #fff;
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+.part-one-title:hover {
+	color: #fff;
+	border-bottom: 2px solid #ff3564;
+	padding-bottom: 7px;
+}
+
+.part-two {
+	background: #f7f7f7;
+	height: 444px;
+}
+
+.part-two-service {
+	padding-top: 40px;
+	font-size: 20px;
+	color: #333333;
+	text-align: center;
+	font-weight: bold;
+}
+
+.part-two-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 130px;
+}
+
+.part-two-title {
+	color: #333333;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.part-two-text {
+	color: #666666;
+	font-size: 12px;
+	width: 160px;
+	margin-top: 14px;
+}
+
+.part-four {
+	height: 252px;
+	background-color: #f7f4f8;
+}
+
+.part-four-frame {
+	width: 208px;
+	height: 80px;
+	text-align: center;
+	margin-left: 40px;
+	border: 1px solid #fff;
+	background: #fff;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.part-four-frame-red {
+	width: 208px;
+	height: 80px;
+	text-align: center;
+	margin-left: 40px;
+	border: 1px solid #ff3564;
+	background: #fff;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.part-four-span {
+	height: 80px;
+	line-height: 80px;
+}
+
+.phone-wechat {
+	display: flex;
+	align-items: baseline;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+.app-header-fixed {
+	padding-top: 0;
+}
+
+.efficient-red {
+	width: 240px;
+	height: 280px;
+	background: url(img/main/efficient-checked.png);
+	text-align: center;
+	margin-left: 130px;
+	cursor: pointer;
+}
+
+.efficient-none {
+	width: 240px;
+	height: 280px;
+	background: url(img/main/efficient.png);
+	text-align: center;
+	margin-left: 130px;
+	cursor: pointer;
+}
+
+.exact-red {
+	width: 240px;
+	height: 280px;
+	background: url(img/main/exact-checked.png);
+	text-align: center;
+	margin-left: 100px;
+	cursor: pointer;
+}
+
+.exact-none {
+	width: 240px;
+	height: 280px;
+	background: url(img/main/exact.png);
+	text-align: center;
+	margin-left: 100px;
+	cursor: pointer;
+}
+
+.safety-red {
+	width: 240px;
+	height: 280px;
+	background: url(img/main/safety-checked.png);
+	text-align: center;
+	margin-left: 100px;
+	cursor: pointer;
+}
+
+.safety-none {
+	width: 240px;
+	height: 280px;
+	background: url(img/main/safety.png);
+	text-align: center;
+	margin-left: 100px;
+	cursor: pointer;
+}
+
+.phone-wechat-frame {
+	width: 600px;
+	height: 160px;
+	border: 1px solid #c9c9c9;
+	cursor: pointer;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.phone-wechat-frame-red {
+	width: 600px;
+	height: 160px;
+	border: 1px solid #ff3564;
+	cursor: pointer;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.background img {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1920px;
+	display: block;
+}
+
+.underLine {
+	border-bottom: 2px solid #ff3564;
+	margin: 10px auto 0 auto;
+	width: 40px;
+}
+
+.part-one {
+	background: url(img/main/bgImage.png) no-repeat;
+	height: 700px;
+	background-size: 100%;
+}
+
+.part-one-login {
+	font-size: 12px;
+	cursor: pointer;
+	margin: 10px 0 20px 506px;
+}
+
+.part-one-center {
+	font-size: 60px;
+	color: #fff;
+	margin-top: 80px;
+	margin-left: 550px;
+}
+
+.ios-qrcode {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.andriod-qrcode {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 40px;
+}
+
+@media screen and (min-width:1920px) {
+	.part-one-header {
+		color: #fff;
+		margin-left: 462px;
+		font-size: 14px;
+		font-family: sans-serif;
+	}
+	.part-one-body {
+		display: flex;
+		position: relative;
+		justify-content: center;
+		width: 1300px;
+		margin: 0 auto;
+	}
+	.logo {
+		padding: 34px 0 0 40px;
+	}
+	.part-one-center {
+		width: 1300px;
+		margin: 0 auto;
+		position: relative;
+		left: 253px;
+		top: 80px;
+		font-size: 60px;
+	}
+}
+
+@media ( min-width :1536px) and (max-width:1910px) {
+	.part-one-header {
+		color: #fff;
+		margin-left:443px;
+		font-size: 14px;
+		font-family: sans-serif;
+	}
+	.part-one-body {
+		display: flex;
+		position: relative;
+		width: 1300px;
+		margin: 0 auto;
+	}
+	.logo {
+		padding: 34px 0 0 40px;
+		position: relative;
+		left: 140px;
+	}
+	.part-one-center {
+		width: 1300px;
+		margin: 0 auto;
+		position: relative;
+		left: 334px;
+    	top: 37px;
+		font-size: 50px;
+	}
+}
+
+@media ( max-width :1535px) {
+	.part-one-header {
+		color: #fff;
+		margin-left: 421px;
+		font-size: 14px;
+		font-family: sans-serif;
+	}
+	.part-one-body {
+		display: flex;
+		position: relative;
+		width: 1300px;
+		margin: 0 auto;
+	}
+	.logo {
+		padding: 34px 0 0 40px;
+		position: relative;
+		left: 184px;
+		bottom: 20px;
+	}
+	.part-one-center {
+		font-size: 40px;
+		color: #fff;
+		width: 1300px;
+		margin: 0 auto;
+		position: relative;
+		left: 343px;
+    	top: 37px;
+	}
+	.part-one-login {
+		font-size: 12px;
+		cursor: pointer;
+		margin: 10px 0 10px 506px;
+	}
+}
+</style>
