@@ -34,8 +34,8 @@ public class TimerManager {
 	private void timerRun() {
 		try {
 			//设置时间间隔
-			int  testTIme = 1*60;
-			long PERIOD_DAY = 1000;
+			int  testTIme = 1*60;//分
+			long PERIOD_DAY = 1000 * testTIme;
 			Date date = new Date();
 			Timer timer = new Timer();
 			UserTimer userTimer = new UserTimer();

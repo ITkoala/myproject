@@ -18,6 +18,7 @@ public class UserTimer extends TimerTask {
 	//测试定时器
 	@Override
 	public void run() {
+		logger.info("---------------定时查询-------------------");
 		try {
 		ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 		UserService userService = ctx.getBean(UserService.class);
