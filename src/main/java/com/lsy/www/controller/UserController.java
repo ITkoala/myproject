@@ -50,7 +50,7 @@ public class UserController {
 			logger.error("查询失败:" + e);
 			e.printStackTrace();
 		}
-		return "系统内部错误";
+		return resultManager.resultError();
 	}
 
 	@RequestMapping(value = "/insert", produces = "plain/text; charset=UTF-8")
@@ -67,7 +67,7 @@ public class UserController {
 			logger.error("新增失败:" + e);
 			e.printStackTrace();
 		}
-		return "系统内部错误";
+		return resultManager.resultError();
 	}
 
 }

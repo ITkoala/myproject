@@ -27,8 +27,33 @@ import com.lsy.www.vo.ResultVO;
  */
 public class ResultManager {
 	
-	Logger logger = LoggerFactory.getLogger(ResultManager.class);
-	
+	private Logger logger = LoggerFactory.getLogger(ResultManager.class);
+	/**
+	 * 
+	 * <pre>
+	 * TODO 返回错误信息
+	 * </pre>
+	 * @author 梁舒艺 
+	 * @param message
+	 * @return   
+	 * @version v1.0.0 2019年5月17日  梁舒艺 创建
+	 */
+	public String resultError() {
+		return resultMessage(MessageType.FAILURE);
+	}
+	/**
+	 * 
+	 * <pre>
+	 * TODO 返回错误信息
+	 * </pre>
+	 * @author 梁舒艺 
+	 * @param failure
+	 * @return   
+	 * @version v1.0.0 2019年5月27日  梁舒艺 创建
+	 */
+	private String resultMessage(MessageType message) {
+		return resultMessage(message.getCode(), message.getMessage(), null, null, DateFormat.YMD);
+	}
 	/**
 	 * 
 	 * <pre>
@@ -55,6 +80,7 @@ public class ResultManager {
 	public String resultSuccessMessage(String message,Object data) {
 		return resultMessage(MessageType.SUCCESS.getCode(), message, data, null,DateFormat.YMD);
 	}
+
 	/**
 	 * 
 	 * <pre>
