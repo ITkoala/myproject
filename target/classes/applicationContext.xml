@@ -42,7 +42,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 
 	<!-- 加载配置文件 -->
 	<context:property-placeholder
-		location="classpath:jdbc.properties" />
+		location="classpath:*.properties" />
 	<!-- 数据库连接池 -->
 	<bean id="dataSource" destroy-method="close"
 		class="org.apache.commons.dbcp.BasicDataSource">
